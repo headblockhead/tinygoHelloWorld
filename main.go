@@ -11,7 +11,6 @@ func main() {
 	led.Configure(machine.PinConfig{Mode: machine.PinOutput})
 	led.High()
 	for {
-		// Turn on and off all of the GPIOs on the board.
 		machine.GP0.Configure(machine.PinConfig{Mode: machine.PinOutput})
 		machine.GP0.High()
 		time.Sleep(time.Second * 1)
